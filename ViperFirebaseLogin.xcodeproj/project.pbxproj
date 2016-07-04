@@ -12,12 +12,12 @@
 		41CA601A1D2B1BC30025CE03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41CA60181D2B1BC30025CE03 /* Main.storyboard */; };
 		41CA601C1D2B1BC30025CE03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41CA601B1D2B1BC30025CE03 /* Assets.xcassets */; };
 		41CA601F1D2B1BC30025CE03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41CA601D1D2B1BC30025CE03 /* LaunchScreen.storyboard */; };
-		41CA603C1D2B202C0025CE03 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA60371D2B202C0025CE03 /* LoginInteractor.swift */; };
-		41CA603D1D2B202C0025CE03 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA60381D2B202C0025CE03 /* LoginPresenter.swift */; };
-		41CA603E1D2B202C0025CE03 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA60391D2B202C0025CE03 /* LoginProtocols.swift */; };
-		41CA603F1D2B202C0025CE03 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA603A1D2B202C0025CE03 /* LoginViewController.swift */; };
-		41CA60401D2B202C0025CE03 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CA603B1D2B202C0025CE03 /* LoginViewController.xib */; };
-		41CA60421D2B206D0025CE03 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA60411D2B206D0025CE03 /* LoginRouter.swift */; };
+		41CA604D1D2B21F00025CE03 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA60471D2B21F00025CE03 /* LoginInteractor.swift */; };
+		41CA604E1D2B21F00025CE03 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA60481D2B21F00025CE03 /* LoginPresenter.swift */; };
+		41CA604F1D2B21F00025CE03 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA60491D2B21F00025CE03 /* LoginProtocols.swift */; };
+		41CA60501D2B21F00025CE03 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA604A1D2B21F00025CE03 /* LoginRouter.swift */; };
+		41CA60511D2B21F00025CE03 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA604B1D2B21F00025CE03 /* LoginViewController.swift */; };
+		41CA60521D2B21F00025CE03 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CA604C1D2B21F00025CE03 /* LoginViewController.xib */; };
 		E6EEF0828A12E1BF4498365F /* Pods_ViperFirebaseLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B23EED3E3F814B3AF25B5CF /* Pods_ViperFirebaseLogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,13 +31,13 @@
 		41CA601B1D2B1BC30025CE03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41CA601E1D2B1BC30025CE03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41CA60201D2B1BC30025CE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41CA60371D2B202C0025CE03 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
-		41CA60381D2B202C0025CE03 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		41CA60391D2B202C0025CE03 /* LoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
-		41CA603A1D2B202C0025CE03 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		41CA603B1D2B202C0025CE03 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		41CA60411D2B206D0025CE03 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		41CA60431D2B20CA0025CE03 /* ViperFirebaseLogin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViperFirebaseLogin-Bridging-Header.h"; sourceTree = "<group>"; };
+		41CA60471D2B21F00025CE03 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		41CA60481D2B21F00025CE03 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		41CA60491D2B21F00025CE03 /* LoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		41CA604A1D2B21F00025CE03 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		41CA604B1D2B21F00025CE03 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		41CA604C1D2B21F00025CE03 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		5C92059EE62238A6052D64A1 /* Pods-ViperFirebaseLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperFirebaseLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperFirebaseLogin/Pods-ViperFirebaseLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,14 +98,22 @@
 		41CA60361D2B202C0025CE03 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				41CA60411D2B206D0025CE03 /* LoginRouter.swift */,
-				41CA60371D2B202C0025CE03 /* LoginInteractor.swift */,
-				41CA60381D2B202C0025CE03 /* LoginPresenter.swift */,
-				41CA60391D2B202C0025CE03 /* LoginProtocols.swift */,
-				41CA603A1D2B202C0025CE03 /* LoginViewController.swift */,
-				41CA603B1D2B202C0025CE03 /* LoginViewController.xib */,
+				41CA60461D2B21F00025CE03 /* Login */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		41CA60461D2B21F00025CE03 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				41CA60471D2B21F00025CE03 /* LoginInteractor.swift */,
+				41CA60481D2B21F00025CE03 /* LoginPresenter.swift */,
+				41CA60491D2B21F00025CE03 /* LoginProtocols.swift */,
+				41CA604A1D2B21F00025CE03 /* LoginRouter.swift */,
+				41CA604B1D2B21F00025CE03 /* LoginViewController.swift */,
+				41CA604C1D2B21F00025CE03 /* LoginViewController.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		D8639FE4931FD2B8F62ECAC0 /* Frameworks */ = {
@@ -177,7 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41CA60401D2B202C0025CE03 /* LoginViewController.xib in Resources */,
+				41CA60521D2B21F00025CE03 /* LoginViewController.xib in Resources */,
 				41CA601F1D2B1BC30025CE03 /* LaunchScreen.storyboard in Resources */,
 				41CA601C1D2B1BC30025CE03 /* Assets.xcassets in Resources */,
 				41CA601A1D2B1BC30025CE03 /* Main.storyboard in Resources */,
@@ -239,13 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41CA603F1D2B202C0025CE03 /* LoginViewController.swift in Sources */,
-				41CA603D1D2B202C0025CE03 /* LoginPresenter.swift in Sources */,
-				41CA603E1D2B202C0025CE03 /* LoginProtocols.swift in Sources */,
+				41CA60511D2B21F00025CE03 /* LoginViewController.swift in Sources */,
+				41CA604E1D2B21F00025CE03 /* LoginPresenter.swift in Sources */,
+				41CA604F1D2B21F00025CE03 /* LoginProtocols.swift in Sources */,
+				41CA60501D2B21F00025CE03 /* LoginRouter.swift in Sources */,
 				41CA60171D2B1BC30025CE03 /* ViewController.swift in Sources */,
 				41CA60151D2B1BC30025CE03 /* AppDelegate.swift in Sources */,
-				41CA60421D2B206D0025CE03 /* LoginRouter.swift in Sources */,
-				41CA603C1D2B202C0025CE03 /* LoginInteractor.swift in Sources */,
+				41CA604D1D2B21F00025CE03 /* LoginInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
