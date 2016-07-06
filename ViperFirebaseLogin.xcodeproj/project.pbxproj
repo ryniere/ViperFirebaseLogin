@@ -18,6 +18,8 @@
 		41CA60501D2B21F00025CE03 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA604A1D2B21F00025CE03 /* LoginRouter.swift */; };
 		41CA60511D2B21F00025CE03 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA604B1D2B21F00025CE03 /* LoginViewController.swift */; };
 		41CA60521D2B21F00025CE03 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CA604C1D2B21F00025CE03 /* LoginViewController.xib */; };
+		41CA60541D2B4F100025CE03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41CA60531D2B4F100025CE03 /* GoogleService-Info.plist */; };
+		41CA60581D2B4FE70025CE03 /* FirebaseAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA60571D2B4FE70025CE03 /* FirebaseAuthenticator.swift */; };
 		E6EEF0828A12E1BF4498365F /* Pods_ViperFirebaseLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B23EED3E3F814B3AF25B5CF /* Pods_ViperFirebaseLogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		41CA604A1D2B21F00025CE03 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		41CA604B1D2B21F00025CE03 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		41CA604C1D2B21F00025CE03 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		41CA60531D2B4F100025CE03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41CA60571D2B4FE70025CE03 /* FirebaseAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticator.swift; sourceTree = "<group>"; };
 		5C92059EE62238A6052D64A1 /* Pods-ViperFirebaseLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperFirebaseLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperFirebaseLogin/Pods-ViperFirebaseLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +87,8 @@
 		41CA60131D2B1BC30025CE03 /* ViperFirebaseLogin */ = {
 			isa = PBXGroup;
 			children = (
+				41CA60551D2B4FD00025CE03 /* Webservices */,
+				41CA60531D2B4F100025CE03 /* GoogleService-Info.plist */,
 				41CA60361D2B202C0025CE03 /* Modules */,
 				41CA60141D2B1BC30025CE03 /* AppDelegate.swift */,
 				41CA60161D2B1BC30025CE03 /* ViewController.swift */,
@@ -116,6 +122,22 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		41CA60551D2B4FD00025CE03 /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				41CA60561D2B4FE70025CE03 /* Authentication */,
+			);
+			path = Webservices;
+			sourceTree = "<group>";
+		};
+		41CA60561D2B4FE70025CE03 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				41CA60571D2B4FE70025CE03 /* FirebaseAuthenticator.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		D8639FE4931FD2B8F62ECAC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +159,7 @@
 				41CA600F1D2B1BC30025CE03 /* Resources */,
 				6F951D658374FADCFA0AE21F /* Embed Pods Frameworks */,
 				B4D1B6D82EB42704EC1AA9E8 /* Copy Pods Resources */,
+				41CA60591D2B50A20025CE03 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -159,6 +182,7 @@
 				TargetAttributes = {
 					41CA60101D2B1BC30025CE03 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Z6KC2UFRV2;
 					};
 				};
 			};
@@ -187,6 +211,7 @@
 			files = (
 				41CA60521D2B21F00025CE03 /* LoginViewController.xib in Resources */,
 				41CA601F1D2B1BC30025CE03 /* LaunchScreen.storyboard in Resources */,
+				41CA60541D2B4F100025CE03 /* GoogleService-Info.plist in Resources */,
 				41CA601C1D2B1BC30025CE03 /* Assets.xcassets in Resources */,
 				41CA601A1D2B1BC30025CE03 /* Main.storyboard in Resources */,
 			);
@@ -195,6 +220,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		41CA60591D2B50A20025CE03 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" b263a9bbf52576de053ace44e6456a2955579dc6 c65314dad5e39468dbec08a7b505eef8a37e08965eabb28fbf15609439aba6c5";
+		};
 		6F951D658374FADCFA0AE21F /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,6 +287,7 @@
 			files = (
 				41CA60511D2B21F00025CE03 /* LoginViewController.swift in Sources */,
 				41CA604E1D2B21F00025CE03 /* LoginPresenter.swift in Sources */,
+				41CA60581D2B4FE70025CE03 /* FirebaseAuthenticator.swift in Sources */,
 				41CA604F1D2B21F00025CE03 /* LoginProtocols.swift in Sources */,
 				41CA60501D2B21F00025CE03 /* LoginRouter.swift in Sources */,
 				41CA60171D2B1BC30025CE03 /* ViewController.swift in Sources */,
@@ -368,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ViperFirebaseLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryniere.ViperFirebaseLogin;
@@ -383,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ViperFirebaseLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryniere.ViperFirebaseLogin;

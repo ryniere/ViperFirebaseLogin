@@ -11,28 +11,20 @@ import FBSDKLoginKit
 import TwitterKit
 
 class LoginViewController: UIViewController, LoginViewProtocol {
-
+	
 	var presenter: LoginPresenterProtocol?
 	
 	@IBOutlet weak var facebookLoginButton: FBSDKLoginButton!
 	@IBOutlet weak var twitterLoginButton: TWTRLogInButton!
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
-		UIGraphicsBeginImageContext(self.view.frame.size)
-		UIImage(named: "loginBackground")?.drawInRect(self.view.bounds)
+		setupLoginButtons()
 		
-		let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
-		
-		UIGraphicsEndImageContext()
-		
-		self.view.backgroundColor = UIColor(patternImage: image)
-
-        setupLoginButtons()
-    }
-
-
+	}
+	
+	
 	private func setupLoginButtons() {
 		facebookLoginButton.delegate = self
 		GIDSignIn.sharedInstance().delegate = self
@@ -46,7 +38,7 @@ class LoginViewController: UIViewController, LoginViewProtocol {
 	@IBAction func tapFacebookLoginButton(sender: AnyObject) {
 		presenter?.didTapFacebookLoginButton()
 	}
-
+	
 	@IBAction func tapGoogleLoginButton(sender: AnyObject) {
 		presenter?.didTapGoogleLoginButton()
 	}
@@ -57,7 +49,7 @@ class LoginViewController: UIViewController, LoginViewProtocol {
 
 extension LoginViewController: FBSDKLoginButtonDelegate {
 	
-
+	
 	func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
 		
 		presenter?.didCompleteFacebookLogin(result, error: error)

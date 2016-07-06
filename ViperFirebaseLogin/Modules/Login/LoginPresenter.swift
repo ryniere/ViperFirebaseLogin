@@ -13,7 +13,7 @@ import TwitterKit
 class LoginPresenter: LoginPresenterProtocol {
 	
 	var interactor: LoginInteractorInputProtocol?
-	var wireframe: LoginRouterProtocol?
+	var router: LoginRouterProtocol?
 	
 	weak var view: LoginViewProtocol?
 	
@@ -47,6 +47,6 @@ extension LoginPresenter: LoginInteractorOutputProtocol {
 	
 	func didLoggedInWithSucess() {
 		
-		wireframe?.dismissLogin()
+		router?.dismissLogin()
 	}
 }

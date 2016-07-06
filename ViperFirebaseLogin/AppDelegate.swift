@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import TwitterKit
+import Fabric
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		// Firebase setup
+		FIRApp.configure()
+		
+		// Google SignIn setup
+		GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()!.options.clientID
+		
+		// Twitter Fabric setup
+		Fabric.with([Twitter.self])
+
+		
 		return true
 	}
 
@@ -39,6 +54,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func applicationWillTerminate(application: UIApplication) {
 		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+	}
+	
+	func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+		
+		if GIDSignIn.sharedInstance().handleURL(url,
+		                                        sourceApplication: sourceApplication,
+		                                        annotation: annotation) {
+			return true
+		}
+		
+		return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+	}
+	
+	func application(application: UIApplication,
+	                 openURL url: NSURL, options: [String: AnyObject]) -> Bool {
+		
+		let sourceApplication = options[UIApplicationOpenURLOptionsSourceApplicationKey] as? String
+		let annotation = options[UIApplicationOpenURLOptionsAnnotationKey]
+		
+		if GIDSignIn.sharedInstance().handleURL(url,
+		                                        sourceApplication: sourceApplication,
+		                                        annotation: annotation) {
+			return true
+		}
+		return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
 	}
 
 

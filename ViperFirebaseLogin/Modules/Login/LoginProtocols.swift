@@ -21,7 +21,7 @@ protocol LoginViewProtocol : class {
 
 protocol LoginPresenterProtocol : class {
 	var interactor: LoginInteractorInputProtocol? { get set }
-	var wireframe: LoginRouterProtocol? { get set }
+	var router: LoginRouterProtocol? { get set }
 	
 	weak var view: LoginViewProtocol? { get set }
 	

@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="LeiSecaMaps" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ViperFirebaseLogin" customModuleProvider="target">
             <connections>
-                <outlet property="facebookLoginButton" destination="aIn-jy-C9z" id="JPz-H1-7Fi"/>
-                <outlet property="twitterLoginButton" destination="err-Nb-55x" id="ujH-fK-fp7"/>
+                <outlet property="facebookLoginButton" destination="aIn-jy-C9z" id="V16-Xn-5cG"/>
+                <outlet property="twitterLoginButton" destination="err-Nb-55x" id="rzX-Dv-7TL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -51,17 +51,12 @@
                     </constraints>
                     <state key="normal" title="Twitter"/>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginMarker" translatesAutoresizingMaskIntoConstraints="NO" id="bVu-bV-dQk">
-                    <rect key="frame" x="215" y="171" width="170" height="170"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="aIn-jy-C9z" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="F4Y-cX-vSi"/>
                 <constraint firstItem="aIn-jy-C9z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Uk6-zj-gkW"/>
-                <constraint firstItem="bVu-bV-dQk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XXf-0t-n4U"/>
                 <constraint firstAttribute="bottom" secondItem="err-Nb-55x" secondAttribute="bottom" constant="50" id="c3x-Xm-tG9"/>
-                <constraint firstItem="bVu-bV-dQk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="171" id="jNf-yx-rn0"/>
                 <constraint firstItem="err-Nb-55x" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="osl-6q-dCy"/>
                 <constraint firstItem="XpL-7h-j67" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="puj-4O-sSb"/>
                 <constraint firstItem="err-Nb-55x" firstAttribute="top" secondItem="XpL-7h-j67" secondAttribute="bottom" constant="20" id="slk-hg-Isj"/>
@@ -76,6 +71,5 @@
     </objects>
     <resources>
         <image name="google" width="18" height="18"/>
-        <image name="loginMarker" width="170" height="170"/>
     </resources>
 </document>

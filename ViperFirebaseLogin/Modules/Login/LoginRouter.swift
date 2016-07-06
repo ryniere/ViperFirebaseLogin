@@ -14,19 +14,19 @@ class LoginRouter: LoginRouterProtocol {
 	
 	class func showLoginOnView(viewController: UIViewController, authenticator: LoginAuthenticatorProtocol) {
 		
-		let wireframe = LoginRouter()
+		let router = LoginRouter()
 		let view = LoginViewController()
 		let presenter = LoginPresenter()
 		let interactor = LoginInteractor()
 		
 		view.presenter = presenter
 		presenter.interactor = interactor
-		presenter.wireframe = wireframe
+		presenter.router = router
 		presenter.view = view
 		interactor.presenter = presenter
 		interactor.authenticator = authenticator
 		
-		wireframe.viewController = view
+		router.viewController = view
 		
 		viewController.presentViewController(view, animated: true, completion: {
 		})
