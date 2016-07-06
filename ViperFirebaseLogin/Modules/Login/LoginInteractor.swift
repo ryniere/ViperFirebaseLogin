@@ -1,6 +1,6 @@
 //
 //  LoginInteractor.swift
-//  LeiSecaMaps
+//  ViperFirebaseLogin
 //
 //  Created by Ryniere S Silva on 18/05/16.
 //  Copyright © 2016 Ryniere S Silva. All rights reserved.
@@ -25,6 +25,10 @@ class LoginInteractor: LoginInteractorInputProtocol {
 		})
 	}
 	
+	func didTapGoogleLoginButton() {
+		GIDSignIn.sharedInstance().signIn()
+	}
+	
 	func didCompleteGoogleLogin(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
 	                            withError error: NSError!) {
 		
@@ -35,9 +39,6 @@ class LoginInteractor: LoginInteractorInputProtocol {
 		})
 	}
 	
-	func googleLogin() {
-		GIDSignIn.sharedInstance().signIn()
-	}
 	
 	func didCompleteTwitterLogin(session: TWTRSession?, error: NSError?) {
 		authenticator?.didCompleteTwitterLogin(session, error: error, completion: { (success) in

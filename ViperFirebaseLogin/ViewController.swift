@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -26,7 +27,15 @@ class ViewController: UIViewController {
 	override func viewDidAppear(animated: Bool) {
 		super.viewDidAppear(animated)
 		
-		LoginRouter.showLoginOnView(self, authenticator: FirebaseAuthenticator())
+		if let user = FIRAuth.auth()?.currentUser {
+			// User is signed in.
+			
+		} else {
+			// No user is signed in.
+			LoginRouter.showLoginOnView(self, authenticator: FirebaseAuthenticator())
+		}
+		
+		
 	}
 
 	override func didReceiveMemoryWarning() {

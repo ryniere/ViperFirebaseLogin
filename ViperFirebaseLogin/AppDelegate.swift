@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Firebase setup
 		FIRApp.configure()
 		
+		try! FIRAuth.auth()!.signOut()
+		
 		// Google SignIn setup
 		GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()!.options.clientID
 		

@@ -1,6 +1,6 @@
 //
 //  FirebaseAuthenticator.swift
-//  LeiSecaMaps
+//  ViperFirebaseLogin
 //
 //  Created by Ryniere S Silva on 20/05/16.
 //  Copyright © 2016 Ryniere S Silva. All rights reserved.

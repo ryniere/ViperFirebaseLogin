@@ -1,6 +1,6 @@
 //
 //  LoginProtocols.swift
-//  LeiSecaMaps
+//  ViperFirebaseLogin
 //
 //  Created by Ryniere S Silva on 18/05/16.
 //  Copyright © 2016 Ryniere S Silva. All rights reserved.
@@ -42,7 +42,7 @@ protocol LoginInteractorInputProtocol : class {
 	
 	func didCompleteFacebookLogin(result: FBSDKLoginManagerLoginResult!, error: NSError!)
 	
-	func googleLogin()
+	func didTapGoogleLoginButton()
 	func didCompleteGoogleLogin(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
 	                            withError error: NSError!)
 	

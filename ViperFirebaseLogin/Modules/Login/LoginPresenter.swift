@@ -1,6 +1,6 @@
 //
 //  LoginPresenter.swift
-//  LeiSecaMaps
+//  ViperFirebaseLogin
 //
 //  Created by Ryniere S Silva on 18/05/16.
 //  Copyright © 2016 Ryniere S Silva. All rights reserved.
@@ -27,7 +27,7 @@ class LoginPresenter: LoginPresenterProtocol {
 	}
 	
 	func didTapGoogleLoginButton() {
-		interactor?.googleLogin()
+		interactor?.didTapGoogleLoginButton()
 	}
 	
 	func didCompleteGoogleLogin(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
