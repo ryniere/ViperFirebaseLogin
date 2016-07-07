@@ -16,8 +16,33 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RBl-EG-C3r">
+                                <rect key="frame" x="250" y="138" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Gg0-TA-xUY"/>
+                                    <constraint firstAttribute="width" constant="100" id="aDe-fW-SrC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pP5-Np-T5U">
+                                <rect key="frame" x="279" y="272" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.1764705926" green="0.89411765340000005" blue="0.84705883260000003" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <constraints>
+                            <constraint firstItem="pP5-Np-T5U" firstAttribute="top" secondItem="RBl-EG-C3r" secondAttribute="bottom" constant="34" id="6FC-Bq-riB"/>
+                            <constraint firstItem="RBl-EG-C3r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NaY-Zt-5Sh"/>
+                            <constraint firstItem="RBl-EG-C3r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="118" id="fU8-lo-LSc"/>
+                            <constraint firstItem="pP5-Np-T5U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="thm-Sh-pc4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userNameLabel" destination="pP5-Np-T5U" id="BYg-xz-N0m"/>
+                        <outlet property="userProfileImageView" destination="RBl-EG-C3r" id="gRN-w7-4jm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

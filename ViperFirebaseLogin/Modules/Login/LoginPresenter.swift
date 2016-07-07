@@ -45,7 +45,7 @@ class LoginPresenter: LoginPresenterProtocol {
 
 extension LoginPresenter: LoginInteractorOutputProtocol {
 	
-	func didLoggedInWithSucess() {
+	func didLoggedInWithSuccess() {
 		
 		router?.dismissLogin()
 	}

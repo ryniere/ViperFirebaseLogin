@@ -20,7 +20,7 @@ class LoginInteractor: LoginInteractorInputProtocol {
 		authenticator?.didCompleteFacebookLogin(result, error: error, completion: { (success) in
 			
 			if success {
-				self.presenter?.didLoggedInWithSucess()
+				self.presenter?.didLoggedInWithSuccess()
 			}
 		})
 	}
@@ -33,8 +33,9 @@ class LoginInteractor: LoginInteractorInputProtocol {
 	                            withError error: NSError!) {
 		
 		authenticator?.didCompleteGoogleLogin(signIn, didSignInForUser: user, withError: error, completion: { (success) in
+			
 			if success {
-				self.presenter?.didLoggedInWithSucess()
+				self.presenter?.didLoggedInWithSuccess()
 			}
 		})
 	}
@@ -43,7 +44,7 @@ class LoginInteractor: LoginInteractorInputProtocol {
 	func didCompleteTwitterLogin(session: TWTRSession?, error: NSError?) {
 		authenticator?.didCompleteTwitterLogin(session, error: error, completion: { (success) in
 			if success {
-				self.presenter?.didLoggedInWithSucess()
+				self.presenter?.didLoggedInWithSuccess()
 			}
 		})
 	}

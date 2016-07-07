@@ -20,6 +20,14 @@
 		41CA60521D2B21F00025CE03 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CA604C1D2B21F00025CE03 /* LoginViewController.xib */; };
 		41CA60541D2B4F100025CE03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41CA60531D2B4F100025CE03 /* GoogleService-Info.plist */; };
 		41CA60581D2B4FE70025CE03 /* FirebaseAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA60571D2B4FE70025CE03 /* FirebaseAuthenticator.swift */; };
+		41D7DDBA1D2C8CB5004FCBA0 /* ProfileConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D7DDB41D2C8CB5004FCBA0 /* ProfileConfigurator.swift */; };
+		41D7DDBB1D2C8CB5004FCBA0 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D7DDB51D2C8CB5004FCBA0 /* ProfileInteractor.swift */; };
+		41D7DDBC1D2C8CB5004FCBA0 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D7DDB61D2C8CB5004FCBA0 /* ProfilePresenter.swift */; };
+		41D7DDBD1D2C8CB5004FCBA0 /* ProfileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D7DDB71D2C8CB5004FCBA0 /* ProfileProtocols.swift */; };
+		41D7DDBE1D2C8CB5004FCBA0 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D7DDB81D2C8CB5004FCBA0 /* ProfileRouter.swift */; };
+		41D7DDC21D2C8CF2004FCBA0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D7DDC01D2C8CF2004FCBA0 /* ProfileViewController.swift */; };
+		41D7DDC31D2C8CF2004FCBA0 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D7DDC11D2C8CF2004FCBA0 /* ProfileViewController.xib */; };
+		41D7DDC61D2E7B02004FCBA0 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D7DDC51D2E7B02004FCBA0 /* UIViewExtension.swift */; };
 		E6EEF0828A12E1BF4498365F /* Pods_ViperFirebaseLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B23EED3E3F814B3AF25B5CF /* Pods_ViperFirebaseLogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +50,14 @@
 		41CA604C1D2B21F00025CE03 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		41CA60531D2B4F100025CE03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41CA60571D2B4FE70025CE03 /* FirebaseAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticator.swift; sourceTree = "<group>"; };
+		41D7DDB41D2C8CB5004FCBA0 /* ProfileConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileConfigurator.swift; sourceTree = "<group>"; };
+		41D7DDB51D2C8CB5004FCBA0 /* ProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		41D7DDB61D2C8CB5004FCBA0 /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		41D7DDB71D2C8CB5004FCBA0 /* ProfileProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileProtocols.swift; sourceTree = "<group>"; };
+		41D7DDB81D2C8CB5004FCBA0 /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		41D7DDC01D2C8CF2004FCBA0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		41D7DDC11D2C8CF2004FCBA0 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		41D7DDC51D2E7B02004FCBA0 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5C92059EE62238A6052D64A1 /* Pods-ViperFirebaseLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperFirebaseLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperFirebaseLogin/Pods-ViperFirebaseLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +103,7 @@
 		41CA60131D2B1BC30025CE03 /* ViperFirebaseLogin */ = {
 			isa = PBXGroup;
 			children = (
+				41D7DDC41D2E7B02004FCBA0 /* Extensions */,
 				41CA60551D2B4FD00025CE03 /* Webservices */,
 				41CA60531D2B4F100025CE03 /* GoogleService-Info.plist */,
 				41CA60361D2B202C0025CE03 /* Modules */,
@@ -104,6 +121,7 @@
 		41CA60361D2B202C0025CE03 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				41D7DDB31D2C8C9D004FCBA0 /* Profile */,
 				41CA60461D2B21F00025CE03 /* Login */,
 			);
 			path = Modules;
@@ -136,6 +154,28 @@
 				41CA60571D2B4FE70025CE03 /* FirebaseAuthenticator.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		41D7DDB31D2C8C9D004FCBA0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				41D7DDB41D2C8CB5004FCBA0 /* ProfileConfigurator.swift */,
+				41D7DDB51D2C8CB5004FCBA0 /* ProfileInteractor.swift */,
+				41D7DDB61D2C8CB5004FCBA0 /* ProfilePresenter.swift */,
+				41D7DDB71D2C8CB5004FCBA0 /* ProfileProtocols.swift */,
+				41D7DDB81D2C8CB5004FCBA0 /* ProfileRouter.swift */,
+				41D7DDC01D2C8CF2004FCBA0 /* ProfileViewController.swift */,
+				41D7DDC11D2C8CF2004FCBA0 /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		41D7DDC41D2E7B02004FCBA0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41D7DDC51D2E7B02004FCBA0 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D8639FE4931FD2B8F62ECAC0 /* Frameworks */ = {
@@ -209,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41D7DDC31D2C8CF2004FCBA0 /* ProfileViewController.xib in Resources */,
 				41CA60521D2B21F00025CE03 /* LoginViewController.xib in Resources */,
 				41CA601F1D2B1BC30025CE03 /* LaunchScreen.storyboard in Resources */,
 				41CA60541D2B4F100025CE03 /* GoogleService-Info.plist in Resources */,
@@ -285,13 +326,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41D7DDC61D2E7B02004FCBA0 /* UIViewExtension.swift in Sources */,
+				41D7DDBC1D2C8CB5004FCBA0 /* ProfilePresenter.swift in Sources */,
+				41D7DDBE1D2C8CB5004FCBA0 /* ProfileRouter.swift in Sources */,
 				41CA60511D2B21F00025CE03 /* LoginViewController.swift in Sources */,
 				41CA604E1D2B21F00025CE03 /* LoginPresenter.swift in Sources */,
+				41D7DDC21D2C8CF2004FCBA0 /* ProfileViewController.swift in Sources */,
+				41D7DDBB1D2C8CB5004FCBA0 /* ProfileInteractor.swift in Sources */,
 				41CA60581D2B4FE70025CE03 /* FirebaseAuthenticator.swift in Sources */,
 				41CA604F1D2B21F00025CE03 /* LoginProtocols.swift in Sources */,
 				41CA60501D2B21F00025CE03 /* LoginRouter.swift in Sources */,
+				41D7DDBD1D2C8CB5004FCBA0 /* ProfileProtocols.swift in Sources */,
 				41CA60171D2B1BC30025CE03 /* ViewController.swift in Sources */,
 				41CA60151D2B1BC30025CE03 /* AppDelegate.swift in Sources */,
+				41D7DDBA1D2C8CB5004FCBA0 /* ProfileConfigurator.swift in Sources */,
 				41CA604D1D2B21F00025CE03 /* LoginInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

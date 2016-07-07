@@ -50,7 +50,7 @@ protocol LoginInteractorInputProtocol : class {
 }
 
 protocol LoginInteractorOutputProtocol : class {
-	func didLoggedInWithSucess()
+	func didLoggedInWithSuccess()
 }
 
 protocol LoginAuthenticatorProtocol {

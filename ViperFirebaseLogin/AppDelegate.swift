@@ -31,7 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		// Twitter Fabric setup
 		Fabric.with([Twitter.self])
-
 		
 		return true
 	}
@@ -83,6 +82,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
 	}
 
+	// MARK: Private
+	
+	private func initWindow() {
+		let frame = UIScreen.mainScreen().bounds
+		window = UIWindow(frame: frame)
+	}
 
 }
 
